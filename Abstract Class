@@ -1,0 +1,37 @@
+# Abstract Class: No Method Body
+                  Abstract keyword used in class 
+                  Partial Abstract
+                  Hidding the implementation logic-- Abstarction
+                  Abstract Class can have abstract method and non abstract methods
+                  Can not create the Object of Abstract classes
+    
+    Bank.java                                  Hdfc.java                                              Testbank.java
+
+Package name;                                  Package name;                                      Package name;
+public abstract class Bank{                    public class HDFCBank extends Bank{                public class TestBank {
+                                                                                                  public static void main (string[] args){
+
+public abstract void loan();                   public void loan(){                                 HDFCBank hb = new HDFCBank();
+// No Body -- Hidding the logic                syso("HDFC -- LoanMethod");                         hb.credit();
+                                               }                                                   hb.debit();
+public void Credit(){                          }                                                   hb.loan();
+syso("Bank -- Credit");                                                                           
+}                                                                                                  Bank b = new HDFCBank();
+public void Debit(){                                                                               b.credit();
+syso("Bank -- Debit");                                                                             b.debit();
+}                                                                                                  b.loan();
+                                                                                                    }
+}                                                                                                  }
+
+
+//output
+Bank --credit
+Bank-- debit
+HDFC --LoanMethod
+Bank --credit
+Bank-- debit
+HDFC --LoanMethod
+
+
+
+
