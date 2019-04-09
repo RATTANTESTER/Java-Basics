@@ -1,0 +1,22 @@
+package string;
+public class StringConcat {
+public static void main (string [] agrs){
+
+int a = 100;
+int b = 200;
+String x = "Hello";
+String y ="World";
+
+System.out.println(a+b);
+System.out.println(x+y);
+System.out.println(a+b+x+y);
+System.out.Println(x+y+a+b);
+System.out.Println(x+y+(a+b));
+
+
+//Output
+300
+HelloWorld
+300HellowWorld
+HelloWorld100200
+HelloWorld300
