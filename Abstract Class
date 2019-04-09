@@ -17,7 +17,7 @@ public abstract void loan();                   public void loan(){              
 public void Credit(){                          }                                                   hb.loan();
 syso("Bank -- Credit");                                                                           
 }                                                                                                  Bank b = new HDFCBank();
-public void Debit(){                                                                               b.credit();
+public void Debit(){                                                                               b.credit(); // DYNAMIC POLYMORPHISM
 syso("Bank -- Debit");                                                                             b.debit();
 }                                                                                                  b.loan();
                                                                                                     }
